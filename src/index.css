@@ -1,0 +1,383 @@
+@import 'tailwindcss';
+
+:root
+{
+  --color1: white;
+  --color2: #3B1F0B;
+
+  --toastify-color-dark: var(--color2);
+  --toastify-color-info: #D08700;
+   --toastify-color-progress-dark: #D08700;
+}
+
+::-webkit-scrollbar
+{
+  @apply h-2 w-[0.3rem];
+}
+
+::-webkit-scrollbar-track
+{
+  @apply bg-[var(--bg)];
+}
+
+::-webkit-scrollbar-thumb
+{
+  @apply bg-[var(--color2)] rounded-full;
+}
+
+*
+{
+  @apply m-0 p-0 box-border;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html
+{
+  @apply bg-gray-200 overflow-x-hidden;
+}
+
+/* NAVBAR */
+nav
+{
+  @apply bg-gray-200 fixed top-0 w-full 
+  flex justify-between items-center py-6 px-10 z-[900];
+}
+
+.logo
+{
+ @apply text-[var(--color2)] font-extrabold text-2xl;
+ letter-spacing: 5px;
+}
+
+.link
+{
+  @apply flex gap-2 text-black hover:text-[var(--color2)]
+  transition-all duration-300;
+}
+
+.menu-mobile
+{
+  @apply fixed top-0 bg-white min-h-dvh w-full
+  flex flex-col justify-center items-center gap-14
+  transition-all duration-300 ease-in-out z-[-1];
+}
+
+/* GENERAL */
+img
+{
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.521));
+}
+
+h1
+{
+  @apply md:text-6xl text-3xl font-bold text-[var(--color2)];
+}
+
+h2
+{
+  @apply md:text-start text-center w-full 
+  text-3xl md:pl-6 text-black font-semibold;
+}
+
+p
+{
+  @apply break-words;
+}
+
+button, a
+{
+  @apply cursor-pointer;
+}
+
+.btn-no-shadow
+{
+  @apply bg-transparent border-2 border-[var(--color2)]
+  text-xl text-[var(--color2)] py-2 px-10 rounded-full 
+  hover:border-yellow-600 hover:text-yellow-600 
+  hover:scale-[0.95] transition-all duration-300;
+}
+
+section
+{
+  @apply md:pl-10 md:pr-10 pl-4 pr-4;
+}
+
+.center
+{
+  @apply flex justify-center items-center;
+}
+
+.banner
+{
+  @apply bg-[url('./assets/bg.avif')] flex flex-col justify-center items-center 
+  gap-4 h-[80dvh] w-full bg-no-repeat bg-center bg-cover rounded-3xl;
+}
+
+.banner-txt
+{
+  @apply md:text-9xl text-6xl text-white font-bold;
+  text-shadow: 0 0 40px var(--color2);
+}
+
+.btn
+{
+  @apply bg-[var(--color2)] text-white text-xl py-2 px-10 rounded-full 
+  shadow-2xl shadow-white border-2 border-transparent hover:shadow-[var(--color2)] 
+  hover:scale-[0.95] hover:bg-transparent hover:border-white
+  transition-all duration-300;
+}
+
+.h-link
+{
+  @apply relative text-xl text-black mt-5
+  transition-all duration-300 z-[2];
+}
+
+.h-link::before
+{
+  content: '';
+  @apply absolute bottom-0 h-[3px] bg-[var(--color2)] text-white text-center
+  rounded-full w-0 transition-all duration-300 z-[-1];
+}
+
+.h-link:hover::before 
+{
+  @apply w-full;
+}
+
+.prodotto
+{
+  @apply grid grid-cols-1 md:grid-cols-2 mt-5 mb-5
+  gap-5;
+}
+
+.prodotto-content
+{
+  @apply flex flex-col justify-center items-center
+  gap-5;
+}
+
+.prezzo
+{
+  @apply md:text-4xl text-2xl font-bold text-yellow-600;
+}
+
+.btn-ordina
+{
+  @apply bg-transparent border-2 border-[var(--color2)]
+  text-xl text-[var(--color2)] py-2 px-10 rounded-full 
+  shadow-2xl shadow-black hover:shadow-yellow-600
+  hover:border-yellow-600 hover:text-yellow-600 
+  hover:scale-[0.95] transition-all duration-300;
+}
+
+.quantita-label
+{
+  @apply text-black pt-2;
+}
+
+.quantita
+{
+  @apply bg-transparent;
+}
+
+.carrello-item
+{
+  @apply flex md:flex-row flex-col w-full justify-between 
+  items-center md:gap-0 gap-5 mb-10 p-4 border-b-2;
+}
+
+.carrello-item > div > img
+{
+  @apply h-40 w-40;
+}
+
+.carrello-prodotto
+{
+  @apply text-2xl font-semibold;
+}
+
+.info
+{
+  @apply text-xl;
+}
+
+.info > span
+{
+  @apply text-yellow-600 font-semibold;
+}
+
+.link-info
+{
+  @apply text-blue-700
+}
+
+.back-btn
+{
+  @apply fixed top-[12%] left-[0%] bg-[var(--color2)]
+  p-3 text-white text-2xl font-bold;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+svg
+{
+  @apply transition-all duration-300;
+}
+
+.back-btn > svg:hover
+{
+  @apply hover:scale-[0.9] transition-all duration-300;
+}
+
+.ordini
+{
+  @apply bg-white p-4 flex flex-col gap-4 rounded-4xl
+  shadow-2xl;
+}
+
+.stato
+{
+  @apply text-green-700 text-xl font-semibold;
+}
+
+/* CARD */
+.card
+{
+  @apply bg-[var(--color2)] flex flex-col justify-center 
+  items-center w-full gap-4 scale-[0.9];
+}
+
+.card-img
+{
+  @apply h-[294px] w-[294px] p-4;
+}
+
+.card, .card-img
+{
+  @apply rounded-4xl;
+}
+
+.card-title
+{
+  @apply text-2xl text-white font-bold;
+}
+
+.card-content
+{
+  @apply bg-black flex flex-col justify-center 
+  items-center w-full py-4 px-4 rounded-b-4xl
+  transition-all duration-300;
+}
+
+.card-btn
+{
+  @apply bg-white py-2 w-full rounded-4xl text-center
+  mt-4 text-xl;
+}
+
+/* FORM */
+form
+{
+  @apply bg-[var(--color2)] flex flex-col justify-center 
+  items-center gap-4 md:p-10 p-5 mt-5 md:w-[40%] w-full
+  rounded-4xl;
+}
+
+form > div
+{
+  @apply flex flex-col w-full;
+}
+
+input
+{
+  @apply bg-white w-full py-2 px-2 rounded-full
+  mt-2;
+}
+
+label
+{
+  @apply text-white font-bold;
+}
+
+.form-txt
+{
+  @apply text-white md:text-3xl text-2xl;
+}
+
+.form-link
+{
+  @apply text-white font-semibold mt-5;
+}
+
+.form-link > a 
+{
+  @apply text-blue-400;
+}
+
+/* PROFILE */
+.profile
+{
+  @apply flex flex-col w-full justify-center md:items-start
+  items-center;
+}
+
+.profile-img > svg
+{
+  @apply bg-[var(--color2)] p-4 rounded-full;
+}
+
+.profile-img
+{
+  @apply flex md:flex-row flex-col justify-center 
+  items-center gap-4;
+}
+
+.settings
+{
+  @apply border-b-2 p-5 mb-4;
+}
+
+.settings-content
+{
+  @apply flex md:flex-row flex-col justify-between 
+  items-center gap-4;
+}
+
+.settings-title
+{
+  @apply text-xl;
+}
+
+/* TABELLA */
+table
+{
+  @apply bg-[var(--color2)] w-full mt-5;
+}
+
+th, tr
+{
+  @apply text-white border-2 border-black p-4;
+}
+
+option
+{
+  @apply text-black;
+}
+
+/* FOOTER */
+.footer
+{
+  @apply bg-black flex flex-col justify-center items-center
+  p-10;
+}
+
+.payment-container
+{
+  @apply flex flex-row gap-4 mt-5 mb-5;
+}
+
+.footer-txt
+{
+  @apply text-white;
+}
