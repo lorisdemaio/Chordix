@@ -4,6 +4,8 @@
 <img width="1866" height="828" alt="c_4" src="https://github.com/user-attachments/assets/a8feac90-614a-49bb-b79d-98d1b181442e" />
 <img width="1863" height="882" alt="c_5" src="https://github.com/user-attachments/assets/794886df-fb8a-4115-8b51-6ef0b2164393" />
 <img width="1863" height="871" alt="c_6" src="https://github.com/user-attachments/assets/5f793928-3706-4fd3-8260-e8048f813ac8" />
+
+Admin
 <img width="1867" height="880" alt="c_7" src="https://github.com/user-attachments/assets/e562d661-3d5e-4bff-bfc6-018316a90338" />
 
 # COME USARE IL PROGETTO:
