@@ -7,6 +7,9 @@
 <img width="1863" height="882" alt="c_5" src="https://github.com/user-attachments/assets/794886df-fb8a-4115-8b51-6ef0b2164393" />
 <img width="1863" height="871" alt="c_6" src="https://github.com/user-attachments/assets/5f793928-3706-4fd3-8260-e8048f813ac8" />
 
+# Admin
+<img width="1867" height="880" alt="c_7" src="https://github.com/user-attachments/assets/e562d661-3d5e-4bff-bfc6-018316a90338" />
+
 # INTRODUZIONE
 # 🎸 Chordix  
 Un e-commerce dedicato agli appassionati di chitarre, dove gli utenti possono acquistare strumenti in modo semplice e veloce.  
@@ -24,9 +27,6 @@ Gli amministratori, tramite una pagina dedicata, possono visualizzare tutti gli 
 ## Funzionalità admin:
 - Visualizza tutti gli ordini 📋
 - Modifica stato degli ordini 📈
-
-# Admin
-<img width="1867" height="880" alt="c_7" src="https://github.com/user-attachments/assets/e562d661-3d5e-4bff-bfc6-018316a90338" />
 
 # COME USARE IL PROGETTO:
 
